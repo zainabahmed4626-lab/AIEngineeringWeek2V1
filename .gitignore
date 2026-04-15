@@ -6,3 +6,7 @@
 chroma_db/
 __pycache__/
 .ipynb_checkpoints/
+
+# Local helper artifacts (not needed in the repo)
+_push_payload.json
+_notebook_content.txt
