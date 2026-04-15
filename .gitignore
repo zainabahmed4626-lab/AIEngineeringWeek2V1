@@ -10,3 +10,4 @@ __pycache__/
 # Local helper artifacts (not needed in the repo)
 _push_payload.json
 _notebook_content.txt
+_readme_github_payload.json
