@@ -89,10 +89,20 @@ Open `rag1.ipynb` and run cells **in order** (setup → load → chunk → embed
 
 ---
 
-## Notes for hiring managers
+## Observations — What Worked, What Didn’t, What I’d Improve (Short Version)
+**What Worked**
+The combination of metadata filtering + hybrid retrieval (BM25 + vector search) noticeably improved relevance, especially for definition‑heavy sections.
+Chunking at 500 characters produced more accurate retrieval for specific questions.
+The custom grounding prompt kept answers concise and reduced hallucinations.
 
-- This project highlights **applied ML systems engineering**: retrieval quality, prompt constraints, observability (chunk previews), and iterative evaluation—not just prompt writing.
-- The design is intentionally modular: you can swap embeddings, vector DB, rerankers, or swap the LLM provider without rewriting the whole pipeline.
+**What Didn’t Work**
+Some textbook sections still produced noisy chunks due to headers, footers, and formatting artifacts.
+A few queries returned context that was technically related but not the most precise match.
+
+**What I’d Improve**
+Clean the PDF text further before chunking to remove repeated structural elements.
+Experiment with stronger embedding models to improve semantic matching.
+Add lightweight evaluation automation to speed up iteration.
 
 ---
 
