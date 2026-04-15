@@ -6,7 +6,7 @@ End-to-end **Retrieval-Augmented Generation (RAG)** system built for **Applied A
 
 ---
 
-## What this project demonstrates (recruiter-friendly)
+## What this project demonstrates 
 
 - **Production-shaped RAG**: not “call an LLM”—a full pipeline from documents → chunks → embeddings → retrieval → grounded answers.
 - **Grounding + safety posture**: answers are constrained to retrieved context with an explicit fallback when evidence is insufficient.
