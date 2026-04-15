@@ -89,7 +89,7 @@ Open `rag1.ipynb` and run cells **in order** (setup → load → chunk → embed
 
 ---
 
-## Observations — What Worked, What Didn’t, What I’d Improve (Short Version)
+## Observations — What Worked, What Didn’t, What I’d Improve 
 **What Worked**
 The combination of metadata filtering + hybrid retrieval (BM25 + vector search) noticeably improved relevance, especially for definition‑heavy sections.
 Chunking at 500 characters produced more accurate retrieval for specific questions.
