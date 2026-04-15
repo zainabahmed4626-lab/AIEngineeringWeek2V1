@@ -17,9 +17,8 @@ End-to-end **Retrieval-Augmented Generation (RAG)** system built for **Applied A
 ---
 
 ## Architecture (high level)
+<img width="1920" height="991" alt="image" src="https://github.com/user-attachments/assets/028fc97a-ca7f-4777-b332-59e8587d504f" />
 
-```mermaid
-flowchart LR
   PDFs[PDF textbooks] --> Load[LangChain PDF loader]
   Load --> Chunk[RecursiveCharacterTextSplitter + metadata]
   Chunk --> Embed[HuggingFace embeddings]
